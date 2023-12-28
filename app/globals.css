@@ -205,7 +205,7 @@ body {
   @apply max-w-full w-[1440px] px-5 mx-auto;
 }
 .hero-text {
-  animation: textAnimate 5s linear infinite;
+  animation: textAnimate 5s linear  ;
   background-image: linear-gradient(45deg, #7028e4, #e5b2ca, #7028e4);
   background-size: 200%;
   background-clip: text;
@@ -213,7 +213,7 @@ body {
   color: transparent
 }
 .hero-text2 {
-  animation: textAnimate 5s linear infinite;
+  animation: textAnimate 5s linear  ;
   background-image: linear-gradient(118.49deg,#ee3094 17.88%,#ef846d 72.21%);
   background-size: 200%;
   background-clip: text;
@@ -231,8 +231,8 @@ body {
 }
 
 .move-2 {
-  -webkit-animation: move2 5s infinite;
-  animation: move2 5s infinite;
+  -webkit-animation: move2 5s  ;
+  animation: move2 5s  ;
 }
 
 
@@ -274,7 +274,7 @@ body {
 
 
 .text_area2 {
-  animation: textAnimate 5s linear infinite;
+  animation: textAnimate 5s linear ;
   background-image: linear-gradient(45deg, #7028e4, #e5b2ca, #7028e4);
   background-size: 200%;
   background-clip: text;
