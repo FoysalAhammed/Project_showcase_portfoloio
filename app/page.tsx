@@ -43,10 +43,9 @@ const Home = async ({ searchParams: { category, endcursor } }: Props) => {
   const projectsToDisplay = data?.projectSearch?.edges || [];
 
   if (projectsToDisplay.length === 0) {
-  // bg-[url('/bg_main.svg')] bg-cover bg-center
-return (
+    return (
  <>
-           <section className="  ">
+           <section className="md:bg-[url('/bg_main.svg')] bg-center bg-cover lg:bg-[url('/bg_main.svg')] xl:bg-[url('/bg_main.svg')]  ">
       <Navbar/>
       <Categories />
       <Hero/>
@@ -64,16 +63,16 @@ return (
  </>
     )
   }
-// bg-[url('/bg_main.svg')] bg-cover bg-center 
+  
   return (
 <>
-<section className=" ">
+<section className=" md:bg-[url('/bg_main.svg')] bg-center bg-cover lg:bg-[url('/bg_main.svg')] xl:bg-[url('/bg_main.svg')] ">
       <Navbar/>
       <Categories />
       <Hero/>
-    <section className="flexStart flex-col paddings mb-16 ">
-      <section className="projects-grid ">
-         {projectsToDisplay.map(({ node }: { node: ProjectInterface }) => (
+    <section className="flexStart flex-col   paddings mb-16 ">
+      <section className="projects-grid  ">
+        {projectsToDisplay.map(({ node }: { node: ProjectInterface }) => (
           <ProjectCard
             key={`${node?.id}`}
             id={node?.id}
@@ -82,7 +81,7 @@ return (
             name={node?.createdBy.name}
             avatarUrl={node?.createdBy.avatarUrl}
             userId={node?.createdBy.id}
-          /> 
+          />
         ))}
       </section>
       <LoadMore 
