@@ -43,9 +43,10 @@ const Home = async ({ searchParams: { category, endcursor } }: Props) => {
   const projectsToDisplay = data?.projectSearch?.edges || [];
 
   if (projectsToDisplay.length === 0) {
-    return (
+  // bg-[url('/bg_main.svg')] bg-cover bg-center
+return (
  <>
-           <section className="bg-[url('/bg_main.svg')] bg-cover bg-center  ">
+           <section className="  ">
       <Navbar/>
       <Categories />
       <Hero/>
@@ -63,16 +64,16 @@ const Home = async ({ searchParams: { category, endcursor } }: Props) => {
  </>
     )
   }
-
+// bg-[url('/bg_main.svg')] bg-cover bg-center 
   return (
 <>
-<section className="bg-[url('/bg_main.svg')] bg-cover bg-center  ">
+<section className=" ">
       <Navbar/>
       <Categories />
       <Hero/>
     <section className="flexStart flex-col paddings mb-16 ">
       <section className="projects-grid ">
-{/*         {projectsToDisplay.map(({ node }: { node: ProjectInterface }) => (
+         {projectsToDisplay.map(({ node }: { node: ProjectInterface }) => (
           <ProjectCard
             key={`${node?.id}`}
             id={node?.id}
@@ -81,7 +82,7 @@ const Home = async ({ searchParams: { category, endcursor } }: Props) => {
             name={node?.createdBy.name}
             avatarUrl={node?.createdBy.avatarUrl}
             userId={node?.createdBy.id}
-          /> */}
+          /> 
         ))}
       </section>
       <LoadMore 
