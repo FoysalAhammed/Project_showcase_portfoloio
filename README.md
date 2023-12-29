@@ -45,7 +45,7 @@ If you're getting started and need assistance or face any bugs, join our active 
 
 ## <a name="features">🔋 Features</a>
 
-👉 **Modern Design Home Page**: Features a clean and modern design resembling Dribbble, with a visually appealing interface showcasing project previews and navigation.
+👉 **Modern Design Home Page**: Features a clean and modern design resembling Portfolio, with a visually appealing interface showcasing project previews and navigation.
 
 👉 **Browsing and Pagination**: Browse different projects, filter them by category, and experience smooth pagination for seamless data exploration.
 
