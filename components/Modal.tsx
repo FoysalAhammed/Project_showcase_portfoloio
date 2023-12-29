@@ -25,7 +25,7 @@ export default function Modal({ children }: { children: ReactNode }) {
                 <Image src="/close.svg" width={17} height={17} alt="close" />
             </button>
 
-            <div ref={wrapper} className="modal_wrapper bg-[url('/bg_main.svg')] bg-cover bg-center ">
+            <div ref={wrapper} className="md:bg-[url('/bg_main.svg')] bg-center bg-cover lg:bg-[url('/bg_main.svg')] xl:bg-[url('/bg_main.svg')]  ">
                 {children}
             </div>
         </div>
