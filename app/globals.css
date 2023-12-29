@@ -4,7 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 html{
-  scroll-behavior:smooth
+  scroll-behavior: smooth;
 }
 * {
   margin: 0;
@@ -15,37 +15,7 @@ html{
 body {
   font-family: Inter;
 }
-/* .container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto
-}
 
-@media (min-width: 576px) {
-  .container {
-      max-width:540px
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-      max-width:720px
-  }
-}
-
-@media (min-width: 992px) {
-  .container {
-      max-width:960px
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-      max-width:1199px
-  }
-} */
 .flexCenter {
   @apply flex justify-center items-center;
 }
@@ -205,7 +175,7 @@ body {
   @apply max-w-full w-[1440px] px-5 mx-auto;
 }
 .hero-text {
-/*   animation: textAnimate 5s linear  ; */
+  animation: textAnimate 5s linear infinite  ;
   background-image: linear-gradient(45deg, #7028e4, #e5b2ca, #7028e4);
   background-size: 200%;
   background-clip: text;
@@ -213,7 +183,7 @@ body {
   color: transparent
 }
 .hero-text2 {
-/*   animation: textAnimate 5s linear  ; */
+  animation: textAnimate 5s linear infinite  ;
   background-image: linear-gradient(118.49deg,#ee3094 17.88%,#ef846d 72.21%);
   background-size: 200%;
   background-clip: text;
@@ -230,11 +200,11 @@ body {
   }
 }
 
-/* .move-2 {
-  -webkit-animation: move2 5s  ;
-  animation: move2 5s  ;
+.move-2 {
+  -webkit-animation: move2 5s  infinite ;
+  animation: move2 5s  infinite;
 }
- */
+
 
 
 @-webkit-keyframes move2 {
@@ -410,14 +380,3 @@ body {
 
 
 
-/* .gradient_button {
-  background: hsla(152, 100%, 50%, 1);
-
-  background: linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
-  
-  background: -moz-linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
-  
-  background: -webkit-linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
-  
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#00FF87", endColorstr="#60EFFF", GradientType=1 );
-} */
