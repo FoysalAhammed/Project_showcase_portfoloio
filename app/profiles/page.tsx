@@ -36,9 +36,9 @@ type SearchParams = {
   const Profiles = async ({ searchParams: { category, endcursor } }: Props) => {
     const data = await fetchAllProjects(category, endcursor) as ProjectSearch
     const projectsToDisplay = data?.projectSearch?.edges || [];
-  // bg-[url('/bg_main.svg')] bg-cover bg-center
+
     return(
-        <section className=" ">
+        <section className="md:bg-[url('/bg_main.svg')] bg-center bg-cover lg:bg-[url('/bg_main.svg')] xl:bg-[url('/bg_main.svg')]   ">
       <Navbar/>
       <Categories />
         <section className='flexCenter flex-col max-w-10xl w-full mx-auto paddings'>
@@ -73,7 +73,7 @@ type SearchParams = {
        <section className="flexStart flex-col lg:mt-28 mt-16 w-full">     
       <p className="w-full text-left text-lg font-semibold">Recent Work</p>
       <section className="projects-grid ">
-        {projectsToDisplay.map(({ node }: { node: ProjectInterface }) => (
+        {/* {projectsToDisplay.map(({ node }: { node: ProjectInterface }) => (
           <ProjectCard
             key={`${node?.id}`}
             id={node?.id}
@@ -83,7 +83,7 @@ type SearchParams = {
             avatarUrl={node?.createdBy.avatarUrl}
             userId={node?.createdBy.id}
           />
-        ))}
+        ))} */}
       </section>
       <LoadMore 
         startCursor={data?.projectSearch?.pageInfo?.startCursor} 
