@@ -7,7 +7,6 @@ import Modal from "@/components/Modal"
 import ProjectActions from "@/components/ProjectActions"
 import RelatedProjects from "@/components/RelatedProjects"
 import { ProjectInterface } from "@/common.types"
-import Footer from "@/components/Footer"
 
 const Project = async ({ params: { id } }: { params: { id: string } }) => {
     const session = await getCurrentUser()
@@ -22,10 +21,10 @@ const Project = async ({ params: { id } }: { params: { id: string } }) => {
     const renderLink = () => `/profile/${projectDetails?.createdBy?.id}`
 
     return (
-        <Modal  >
-           <section className="flexBetween gap-y-8 max-w-4xl max-xs:flex-col w-full  ">
+        <Modal>
+            <section className="flexBetween gap-y-8 max-w-4xl max-xs:flex-col w-full">
                 <div className="flex-1 flex items-start gap-5 w-full max-xs:flex-col">
-                    <Link href="/profiles">
+                    <Link href={renderLink()}>
                         <Image
                             src={projectDetails?.createdBy?.avatarUrl}
                             width={50}
@@ -40,7 +39,7 @@ const Project = async ({ params: { id } }: { params: { id: string } }) => {
                             {projectDetails?.title}
                         </p>
                         <div className="user-info">
-                            <Link href="/profiles">
+                            <Link href={renderLink()}>
                                 {projectDetails?.createdBy?.name}
                             </Link>
                             <Image src="/dot.svg" width={4} height={4} alt="dot" />
@@ -62,8 +61,8 @@ const Project = async ({ params: { id } }: { params: { id: string } }) => {
                 <Image
                     src={`${projectDetails?.image}`}
                     className="object-cover rounded-2xl"
-                    width={850}
-                    height={500}
+                    width={1064}
+                    height={798}
                     alt="poster"
                 />
             </section>
@@ -86,12 +85,12 @@ const Project = async ({ params: { id } }: { params: { id: string } }) => {
       
             <section className="flexCenter w-full gap-8 mt-28">
                 <span className="w-full h-0.5 bg-light-white-200" />
-                <Link href="/profiles" className="min-w-[82px] h-[82px]">
+                <Link href={renderLink()} className="min-w-[82px] h-[82px]">
                     <Image
                         src={projectDetails?.createdBy?.avatarUrl}
                         className="rounded-full"
-                        width={100}
-                        height={100}
+                        width={82}
+                        height={82}
                         alt="profile image"
                     />
                 </Link>
