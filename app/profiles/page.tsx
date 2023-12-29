@@ -73,7 +73,7 @@ type SearchParams = {
        <section className="flexStart flex-col lg:mt-28 mt-16 w-full">     
       <p className="w-full text-left text-lg font-semibold">Recent Work</p>
       <section className="projects-grid ">
-        {/* {projectsToDisplay.map(({ node }: { node: ProjectInterface }) => (
+        {projectsToDisplay.map(({ node }: { node: ProjectInterface }) => (
           <ProjectCard
             key={`${node?.id}`}
             id={node?.id}
@@ -83,7 +83,7 @@ type SearchParams = {
             avatarUrl={node?.createdBy.avatarUrl}
             userId={node?.createdBy.id}
           />
-        ))} */}
+        ))}
       </section>
       <LoadMore 
         startCursor={data?.projectSearch?.pageInfo?.startCursor} 
