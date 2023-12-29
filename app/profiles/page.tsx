@@ -36,9 +36,9 @@ type SearchParams = {
   const Profiles = async ({ searchParams: { category, endcursor } }: Props) => {
     const data = await fetchAllProjects(category, endcursor) as ProjectSearch
     const projectsToDisplay = data?.projectSearch?.edges || [];
-  
+  // bg-[url('/bg_main.svg')] bg-cover bg-center
     return(
-        <section className="bg-[url('/bg_main.svg')] bg-cover bg-center  ">
+        <section className=" ">
       <Navbar/>
       <Categories />
         <section className='flexCenter flex-col max-w-10xl w-full mx-auto paddings'>
