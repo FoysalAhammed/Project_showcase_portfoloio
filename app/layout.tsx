@@ -2,7 +2,7 @@ import "./globals.css";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 export const metadata = {
-  title: "Web Engineer Foysal ",
+  title: "Backend Software Engineer Foysal Portfolio",
   description: " Showcase Web Developer MD Foysal Ahammed projects",
 };
 
